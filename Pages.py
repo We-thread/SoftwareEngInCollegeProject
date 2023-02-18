@@ -478,3 +478,239 @@ class WhyJoinInCollege(Page):
         clear_console()
         self.print_content()
         self.state.current_page = self.state.root
+        
+class UsefulLinks(Page):
+    def print_content(self):
+        print(f"\n{self.split_star}\n",
+              f"All use Useful Links for you!\n",
+              f"Select from one of the options below:\n")
+        self.print_menu()
+        print('\n')
+
+    # def navigate(self):
+        # self.print_menu()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        selection = input(
+            "Type your selection here: ")
+        if selection == "0":
+            self.state.current_page = self.state.root
+            return
+        if selection in self.children:
+            self.state.current_page = self.children[selection]
+        else:
+            print("Invalid selection! Try again.")
+            self.onLoad()      
+
+class General(Page):
+    def print_content(self):
+        print(f"\n{self.split_star}\n",
+              f"All General Information for you!\n",
+              f"Select from one of the options below:\n")
+        self.print_menu()
+        print('\n')
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        selection = input(
+            "Type your selection here: ")
+        if selection == "0":
+            self.state.current_page = self.state.root
+            return
+        if selection in self.children:
+            self.state.current_page = self.children[selection]
+        else:
+            print("Invalid selection! Try again.")
+            self.state.current_page = self.state.root
+
+class BusinessSolutions(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n Under construction.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+class BrowseInCollege(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n Under construction.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+class Directories(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n Under construction.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+
+class InCollegeImportantLinks(Page):
+    def print_content(self):
+        print(f"\n{self.split_star}\n",
+              f"All use InCollege Important Links for you!\n",
+              f"Select from one of the options below:\n")
+        self.print_menu()
+        print('\n')
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        selection = input(
+            "Type your selection here: ")
+        if selection == "0":
+            self.state.current_page = self.state.root
+            return
+        if selection in self.children:
+            self.state.current_page = self.children[selection]
+        else:
+            print("Invalid selection! Try again.")
+            self.onLoad()   
+
+class CopyRightNotice(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n This is Copyright Notice Page.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+class About(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n This is About Page.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+class Accessibility(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n This is Accessibility Page.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+class UserAgreement(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n This is User Agreement Page\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+class PrivacyPolicy(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n This is Privacy Policy Page.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+class CookiePolicy(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n This is Cookie Policy Page.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+class CopyrightPolicy(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n This is Copyright Policy Page\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+class BrankPolicy(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n This is Brand Policy Page.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+class GuestControlsLanguage(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n Under construction.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+
+class HelpCenter(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n Under construction.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+class Press(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n Under construction.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+class Blog(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n Under construction.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+class Careers(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n Under construction.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root
+class Developers(Page):
+    def print_content(self):
+        print(f"{self.split_tilde}\n Under construction.\n")
+        input()
+
+    def onLoad(self):
+        clear_console()
+        self.print_content()
+        self.state.current_page = self.state.root        
